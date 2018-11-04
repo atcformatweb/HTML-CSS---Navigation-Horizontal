@@ -1,0 +1,136 @@
+*{
+   box-sizing:border-box;
+   margin:0px;
+   padding:0px;
+}
+
+/* ***** Navigation ***** */
+.naviagtion-vertical{
+    height:100vh;
+}
+
+.naviagtion-vertical, 
+.naviagtion-vertical ul li{
+    background-color:black;
+}
+
+.naviagtion-vertical ul{
+    background-color:green;
+    padding:0px;
+    margin:0px;
+
+}
+
+.naviagtion-vertical ul li{
+    list-style:none;
+}
+
+.naviagtion-vertical ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -o-transition:all 1s;
+    transition: all 1s;
+}
+
+/* Navigation burger*/
+.navigation-burger{
+	background-color:black;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	display:none;
+}
+
+.navigation-burger:hover{
+	background-color:red;
+}
+
+.navigation-burger button{
+	background-color:transparent;
+	color:white;
+	border:none;
+	height:50px;
+	width:52px;
+}
+
+
+.custom-icon, .naviagtion-vertical ul li a{
+    padding:10px;
+    padding-left:20px;
+   
+}
+
+/* Hover link */
+.naviagtion-vertical ul li a:hover{
+    background-color:red;
+    font-size:18px;
+}
+
+/* Icone */
+.custom-icon{
+    color:white;
+}
+/* Burger*/
+
+
+.float-left{
+    float:left;
+    width:20%;
+    min-width:170px;
+}
+.float-right{
+    float:right;
+    width:80%;
+	padding:20px;
+}
+
+@media screen and (max-width: 840px){
+	.navigation-burger{
+		display:block;
+	}
+    .naviagtion-vertical{
+		display:none;
+	}
+	
+	.float-left{
+		width:0px;
+	}
+	
+	.float-right{
+		width:100%;
+		float:none;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.float-right{
+		padding:50px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
